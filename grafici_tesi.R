@@ -8,7 +8,7 @@ library(dplyr)
 library(tidyr)
 library(scales)
 
-# PARAGRAFO 1.1
+# PARAGRAFO 2.1
 ## GRAFICO A LINEE SUL CONSUMO ENERGETICO DEI DATA CENTER NEL TEMPO
 
 long_consumo <- consumo_totale %>%
@@ -57,7 +57,7 @@ LLM_scPlot <- ggplot(llm_update, aes(y = Energy_in_Joules,
 
 LLM_scPlot
 
-# PARAGRAFO 1.2
+# PARAGRAFO 2.2
 ## GRAFICO A BARRE DEL CONSUMO IDRICO
 
 ### L'EESI sostiene che un data center hyperscale può consumare fino a 19 milioni di litri d'acqua al giorno
@@ -82,7 +82,7 @@ di grandi dimensioni",
   theme_minimal() +
   scale_fill_manual("Legenda", values = c("Acqua utilizzata" = "blue", "Indiretto" = "lightgreen", "Diretto" = "lightblue", "Non riciclata" = "red"))
 
-# PARAGRAFO 1.3
+# PARAGRAFO 2.3
 ## Grafico a colonne sul numero di chip di IA resi operativi nel mondo
 
 summary(chips_per_year$"Total number of AI chips")
